@@ -3,21 +3,14 @@ import React from "react";
 import { Badge } from "../../types/home.types";
 import styles from "./style.module.css";
 
-const getClass = type => {
-  if (type === "new") return styles.new;
-  else if (type === "deadline") return styles.deadline;
-  //else if (type === "project" || state === "study") return styles.study;
-  return styles.hot;
-};
-
 interface BadgeProps {
   badge: Badge;
 }
 
 const Badge = ({ badge }: BadgeProps) => {
-  const { type, content } = badge;
+  const { type } = badge;
 
-  const studyState = {
+  const text = {
     new: "🍞 따끈따끈 새 글",
     deadline: "🔥 마감코앞",
     hot: "💙 인기",
@@ -27,7 +20,7 @@ const Badge = ({ badge }: BadgeProps) => {
 
   return (
     <div className={`${styles.badge}`}>
-      <div className={getClass(type)}>{studyState[type]}</div>
+      <div className={styles[type]}>{text[type]}</div>
     </div>
   );
 };

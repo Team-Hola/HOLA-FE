@@ -11,23 +11,23 @@ const spoqaHansSans = localFont({
   display: "swap",
   src: [
     {
-      path: "../static/fonts/SpoqaHanSansNeoBold.woff2",
+      path: "../public/fonts/SpoqaHanSansNeoBold.woff2",
       weight: "700",
     },
     {
-      path: "../static/fonts/SpoqaHanSansNeoMedium.woff2",
+      path: "../public/fonts/SpoqaHanSansNeoMedium.woff2",
       weight: "500",
     },
     {
-      path: "../static/fonts/SpoqaHanSansNeoRegular.woff2",
+      path: "../public/fonts/SpoqaHanSansNeoRegular.woff2",
       weight: "400",
     },
     {
-      path: "../static/fonts/SpoqaHanSansNeoLight.woff2",
+      path: "../public/fonts/SpoqaHanSansNeoLight.woff2",
       weight: "300",
     },
     {
-      path: "../static/fonts/SpoqaHanSansNeoThin.woff2",
+      path: "../public/fonts/SpoqaHanSansNeoThin.woff2",
       weight: "100",
     },
   ],
